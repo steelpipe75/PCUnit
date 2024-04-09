@@ -9,4 +9,4 @@ project(
 
 add_subdirectory(PCUnit)
 add_subdirectory(sample)
-# add_subdirectory(test) # todo
+add_subdirectory(test)
