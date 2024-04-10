@@ -8,22 +8,18 @@ project(
 )
 
 add_executable(
-    PCUnit_sample
+    sample
 
     main.c
-
-    RingBuf.c
-    test_RingBuf.c
-
-    StrToken.c
-    test_StrToken.c
+    RingBuf.c  test_RingBuf.c
+    StrToken.c test_StrToken.c
 )
 
 target_link_libraries(
-    PCUnit_sample
+    sample
     PCUnit
 )
 
-target_include_directories(PCUnit_sample PRIVATE
+target_include_directories(sample PRIVATE
     ${CMAKE_CURRENT_SOURCE_DIR}
 )
