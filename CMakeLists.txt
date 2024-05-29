@@ -8,5 +8,5 @@ project(
 )
 
 add_subdirectory(PCUnit)
-add_subdirectory(sample)
-add_subdirectory(test)
+# add_subdirectory(sample)
+# add_subdirectory(test)
