@@ -8,5 +8,13 @@ project(
 )
 
 add_subdirectory(PCUnit)
-# add_subdirectory(sample)
-# add_subdirectory(test)
+
+option(BUILD_SAMPLE "build sample" OFF)
+if(BUILD_SAMPLE)
+    add_subdirectory(sample)
+endif()
+
+option(BUILD_TESTS "Build tests" OFF)
+if(BUILD_TESTS)
+    add_subdirectory(test)
+endif()
